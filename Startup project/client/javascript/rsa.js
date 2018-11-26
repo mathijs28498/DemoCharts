@@ -2,12 +2,12 @@
 var chartCount;
 var ticketCount = [];
 var rootCause = [];
-// var backgroundColors = ["#003f5c",
-//                         "#444e86",
-//                         "#955196",
-//                         "#dd5182",
-//                         "#ff6e54",
-//                         "#ffa600"];
+var defaultBackgroundColors = ["#003f5c",
+                               "#444e86",
+                               "#955196",
+                               "#dd5182",
+                               "#ff6e54",
+                               "#ffa600"];
 var color1 = [0,0,255];
 var color2 = [0,255,255];
 var backgroundColors = [];
@@ -15,8 +15,6 @@ var rootCauseChartData;
 
 function main() {
     getFromJSON();
-        // .done(makeChartObject())
-        // .done(makePieChart());
 }
 
 function getFromJSON() {
@@ -76,34 +74,12 @@ function makePieChart() {
         type : "pie",
         data : rootCauseChartData,
         options : {
-            adwd : (evt, item) => { 
-                console.log("yes");
-                var day = item[0]['_model'].label;
-                this.selectedDay = day;
-                this.renderHourlyBarChart();
-            },
             title : {
                 display: true,
                 text: "top " + chartCount + " root causes in the last 30 days"
             },
         }
     });
-
-    // pieChartCanvas.click( function(evt) {
-    //     console.log(evt);
-    //     var activePoints = getElementsAtEvent(evt);
-    //     console.log(activePoints);
-    // })
-    // pieChartElement.click( 
-    //     function(evt){
-    //         var activePoints = pieChartObject.getSegmentsAtEvent(evt);
-    //         console.log(activePoints[0].label);
-    //     }
-    // ); 
-}
-
-function test() {
-    console.log("works");
-}
+}=
 
 $(document).ready(main);
