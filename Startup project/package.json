@@ -1,0 +1,12 @@
+{
+  "name": "movielist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon"
+  },
+  "author": "Mathijs <mathijs.frank@hotmail.com>",
+  "license": "ISC"
+}

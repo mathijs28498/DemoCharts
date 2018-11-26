@@ -1,0 +1,25 @@
+{
+  "ROWCOUNT": 6,
+  "COLUMNS": [
+    "TICKETCOUNT",
+    "PROBLEMRESOLVEROOTCAUSE"
+  ],
+  "DATA": {
+    "TICKETCOUNT": [
+      18,
+      17,
+      12,
+      11,
+      10,
+      4
+    ],
+    "PROBLEMRESOLVEROOTCAUSE": [
+      "Coverage",
+      "iDirect Modem",
+      "Blocking",
+      "Router",
+      "According to Contract",
+      "Local Interference"
+    ]
+  }
+}
